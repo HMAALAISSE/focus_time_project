@@ -61,6 +61,7 @@ CREATE TABLE ApplicationsBloquees (
     FOREIGN KEY (utilisateur_id) REFERENCES PreferencesUtilisateur(id)
 );
 
+
 ALTER TABLE GestionnaireNotification
 ADD COLUMN utilisateur_id INT,
 ADD FOREIGN KEY (utilisateur_id) REFERENCES PreferencesUtilisateur(id);
